@@ -9,7 +9,84 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play APN 621 Branching.</tw-noscript></noscript></tw-story>
-<tw-storydata name="APN 621 Branching" startnode="1" creator="Twine" creator-version="2.3.14" ifid="F3ED630A-E2EA-4B6D-8BC0-60431378AFF1" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Patient Background" tags="" position="670,362" size="100,100">You receive a referral for “obesity nutrition education” from a provider. The client has not seen a healthcare provider in over 30 years. The client is a 62 year old African American male. Chief complaint of leg and body cramps for 1 week prior to admission and general malaise. Admitting diagnosis of Diabetic Ketoacidosis (DKA), admitted to the critical care unit for an insulin drip. BMI 42. Labs significant for A1c &gt;14%, point of care blood glucose of 409 on admission, total cholesterol 244, triglycerides 256, HDL 26, LDL 153. Pt with poor dentition, missing his top teeth. 
+<tw-storydata name="APN 621 Branching" startnode="13" creator="Twine" creator-version="2.3.14" ifid="F3ED630A-E2EA-4B6D-8BC0-60431378AFF1" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+  background-image: url('https://github.com/uneIDS/APN-621-Scenario/blob/main/Raw%20Images/APN_621_Background01.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  align-items: center;
+  background-color: white;
+  color: #A9A9A9;
+  font-family: sans-serif;
+}
+tw-passage {
+  font-family: "Sans Serif", "Arial";
+  background-color: rgba(255, 255, 255, .8);
+  padding: 1.5em;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+#patientChart {
+  width: 800px;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+}
+table, th, td {
+  border: 1px solid;
+  padding: 5px;
+}
+tw-story[tags="title"] {
+  text-align: center;
+}
+h2 {
+  color: #696969;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Patient Background" tags="" position="669,360" size="100,100">One of the many meetings you have today is with a new patient who has been referred to you for &quot;obesity nutrition education&quot; from their provider. 
+
+You look at the relevant information from their referral paperwork. 
+
+&lt;table id=&quot;patientChart&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;First Name&lt;/th&gt;
+    &lt;th&gt;Last Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;Gender&lt;/th&gt;
+    &lt;th&gt;Race/Ethnicity&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Redacted&lt;/td&gt;
+    &lt;td&gt;Redacted&lt;/td&gt;
+    &lt;td&gt;62&lt;/td&gt;
+    &lt;td&gt;M&lt;/td&gt;
+    &lt;td&gt;African American&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Reason for Admission&lt;/th&gt;
+    &lt;th colspan=&quot;2&quot;&gt;Admitting Diagnosis&lt;/th&gt;
+    &lt;th colspan=&quot;2&quot;&gt;Actions Taken&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Leg and Body cramps for 1 week prior to admission and general malaise&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;Diabetic Ketoacidosis (DKA)&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;Admitted to critical care unit for insulin drip&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;br /&gt;
+  &lt;tr&gt;
+    &lt;th colspan=&quot;5&quot;&gt;Lab Results&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;5&quot;&gt;Labs significant for A1c &gt;14%, point of care blood glucose of 409 on admission, total cholesterol 244, triglycerides 256, HDL 26, LDL 153. &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th colspan=&quot;5&quot;&gt;Notes&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;5&quot;&gt;BMI 42, Patient has poor dentition and is missing his top teeth. &lt;strong&gt;Patient has not seen a healthcare provider in &gt; 30 years&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
 You have a meeting with him in a few hours and need to choose a main focus for the session.
 
@@ -19,7 +96,7 @@ You have a meeting with him in a few hours and need to choose a main focus for t
 
 Do you: 
 [[Reinforce the need for weight loss]]
-[[Switch to a different topic]] </tw-passagedata><tw-passagedata pid="3" name="Diabetes" tags="" position="741,507" size="100,100">The patient has heard the word Diabetes but doesn&#39;t know what it is. He seems interested in learning more about this topic. 
+[[Switch to a different topic]] </tw-passagedata><tw-passagedata pid="3" name="Diabetes" tags="" position="741,506" size="100,100">The patient has heard the word Diabetes but doesn&#39;t know what it is. He seems interested in learning more about this topic. 
 
 Do you:
 [[Provide patient with written information|Pamphlet]]
@@ -36,23 +113,28 @@ Let&#39;s redirect with the patient to another topic.
 
 You redirect to: 
 [[Diabetes]] 
-[[High Triglycerides]] </tw-passagedata><tw-passagedata pid="7" name="Pamphlet" tags="" position="750,673" size="100,100">Oops - if you don&#39;t know his diet, how can you be sure you are providing appropriate education for this specific patient? Let&#39;s go back and obtain a diet history first before providing written information.
+[[High Triglycerides]] </tw-passagedata><tw-passagedata pid="7" name="Pamphlet" tags="" position="750,673" size="100,100">Oops - if you don&#39;t know his diet, how can you be sure you are providing appropriate education for this specific patient? Let&#39;s obtain a diet history first before providing written information.
 
 [[Diet History]] </tw-passagedata><tw-passagedata pid="8" name="Diet History" tags="" position="911,671" size="100,100">Good choice! This will help tailor the education session and will help you choose what handouts to provide the patient.
 
-The patient tells you he only eats two meals per day. He typically eats chocolate cherrios with whole milk for breakfast, protein, starch, and a vegetable for dinner. He typically eats bacon, lean fish, chicken, meatballs, or steak tips for protien. He also eats vegetables every night - broccoli or a frozen mixed vegetable medly. Starches include pasta/spaghetti and cereal. He notes that he has recently been staying away from sweets, cutting back from 6 cookies at a time to 3.
+The patient tells you he only eats two meals per day: 
+&lt;strong&gt;Breakfast:&lt;/strong&gt; chocolate cheerios with whole milk
+&lt;strong&gt;Dinner:&lt;/strong&gt; protein, starch, and a vegetable 
+&lt;br /&gt;His protien options typically include bacon, lean fish, chicken, meatballs, or steak tips. His vegetables are usually broccoli or a frozen mixed vegetable medly. His starches include pasta/spaghetti and cereal. 
+&lt;br /&gt;He notes that he has recently been staying away from sweets, cutting back from 6 cookies at a time to 3.
 
-(if: (history:) contains &quot;Diabetes&quot;)[[[Provide Hypoglycemia and Hyperglycemia handouts|Hypo- and Hyper- glycemia handouts]]](elseif: (history:) contains &quot;High Triglycerides&quot;)[[[Provide Hypertyiglycerideia handout|Hypertriglyceridemia handout]]]</tw-passagedata><tw-passagedata pid="9" name="Hypo- and Hyper- glycemia handouts" tags="" position="866,821" size="100,100">You provide the patient with a handout that describes the signs/symptoms of hypoglycemia and hyperglycemia. Goals could include measuring cereal to be able to count the carbohydrates, read labels for carbohydrates, and visit a Diabetes Nutrition Center for continued outpatient follow-up.
+(if: (history:) contains &quot;Diabetes&quot;)[[[Provide Hypoglycemia and Hyperglycemia handouts|Hypo- and Hyper- glycemia handouts]]](elseif: (history:) contains &quot;High Triglycerides&quot;)[[[Provide Hypertyiglycerideia handout|Hypertriglyceridemia handout]]]</tw-passagedata><tw-passagedata pid="9" name="Hypo- and Hyper- glycemia handouts" tags="" position="865,821" size="100,100">You provide the patient with a handout that describes the signs/symptoms of hypoglycemia and hyperglycemia. You mention to him that his goals moving forward could include measuring cereal to be able to count the carbohydrates, reading labels for carbohydrates, and visiting a Diabetes Nutrition Center for continued outpatient follow-up.
 
-The patient seems concerned about visiting a doctor. [[You ask him why he hasn&#39;t seen a doctor in 30 years|Doctor history]]</tw-passagedata><tw-passagedata pid="10" name="Hypertriglyceridemia handout" tags="" position="1027,822" size="100,100">You provide the patient with a handout that describes the signs/symptoms of hypertriglyceridemia. Goals could include changing from whole to 1-2% milk and choosing lean proteins rather than red meats. Note that, without his top teeth, he is limited on the types of vegetables he can eat.
+The last part of your recommendations made him visibly concerned. He doesn&#39;t seem to want to visit a healthcare provider of any type. [[You ask him why he hasn&#39;t seen a doctor in 30 years|Doctor history]]</tw-passagedata><tw-passagedata pid="10" name="Hypertriglyceridemia handout" tags="" position="1027,822" size="100,100">You provide the patient with a handout that describes the signs/symptoms of hypertriglyceridemia. You mention to him that goals moving forward could include changing from whole to 1-2% milk and choosing lean proteins rather than red meats while noting that, without his top teeth, he is limited on the types of vegetables he can eat.
 
-The patient seems concerned about visiting a doctor. [[You ask him why he hasn&#39;t seen a doctor in 30 years-&gt;Doctor history]]</tw-passagedata><tw-passagedata pid="11" name="Doctor history" tags="" position="937,970" size="100,100">When asked why he hasn&#39;t seen a doctor in 30 years, he reports that he had a racially insensitive provider when he was 32, then lost his insurance and could not afford to seek out medical care. 
+You recall from his patient info that he seems reluctant to visit a healthcare provider of any type. [[You ask him why he hasn&#39;t seen a doctor in 30 years-&gt;Doctor history]]</tw-passagedata><tw-passagedata pid="11" name="Doctor history" tags="" position="937,970" size="100,100">When asked why he hasn&#39;t seen a doctor in 30 years, he reports that he had a racially insensitive provider when he was 32, then lost his insurance and could not afford to seek out medical care. This is clearly something that has been weighing on him for some time now and won&#39;t be solved overnight.
 
-You continue to build this relationship by using MI techniques assessing income, poverty, literacy, and his own culture.
+You set a goal for yourself to continue to build this relationship by using MI techniques assessing income, poverty, literacy, and his own culture.
 
 Before ending your appointment with him, you should consider [[what other information might be pertinent for this case|More information]]</tw-passagedata><tw-passagedata pid="12" name="More information" tags="" position="937,1120" size="100,100">What other information might be pertinent for this case? Providing (if: (history:) contains &quot;Diabetes&quot;)[hypertriglyceridemia](elseif: (history:) contains &quot;High Triglycerides&quot;)[diabetes] information? Note that weight loss for this patient might be a side effect of following a healthy, well-rounded diet.
 
-It’s important to take into account many factors when interacting with patients, so be sure to take time to talk with your client and provide each client with the individualized nutrition education they need, regardless of what the original consult is for.</tw-passagedata></tw-storydata>
+It’s important to take into account many factors when interacting with patients, so be sure to take time to talk with your client and provide each client with the individualized nutrition education they need, regardless of what the original consult is for.</tw-passagedata><tw-passagedata pid="13" name="Title Page" tags="title" position="672,219" size="100,100">&lt;h1&gt;APN 621 Scenario&lt;/h1&gt;&lt;hr /&gt;&lt;h2&gt;The Patient Consult&lt;/h2&gt;
+[[Start Scenario-&gt;Patient Background]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
